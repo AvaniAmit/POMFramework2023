@@ -4,16 +4,23 @@ public class User {
 
 	
 	public void m1()
-	{
-		int i=10;
-		
+	{ 	 
+     double d=10.00;
+     double dd=34.44;
+    
 	}
-	
-	public void m2()
+    
+	public int m2()
 	{
 		String p="Selenium";
+		return 123;
 		
 	}
+		
+	 
+	
+	 
+ 
 	
 	
 	
