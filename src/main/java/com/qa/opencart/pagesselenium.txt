@@ -1,2 +1,0 @@
-this is my selenium text file
-  hi selenium here for fetch 
