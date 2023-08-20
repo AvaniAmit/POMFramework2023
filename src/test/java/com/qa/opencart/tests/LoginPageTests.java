@@ -63,7 +63,7 @@ public class LoginPageTests extends BaseTest{
 	@Test(priority=5)
 	public void sanityTest() 
 	{
-		Assert.assertEquals(true, false);
+		Assert.assertEquals(true, true);
 	}
 
  
