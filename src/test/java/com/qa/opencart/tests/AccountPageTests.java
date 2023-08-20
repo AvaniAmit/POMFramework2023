@@ -73,7 +73,7 @@ public class AccountPageTests extends BaseTest{
 			{"macbook",3},
 			{"apple",1},
 			{"canon",1},
-			{"samsung",2} 
+			{"samsung",1} 
 			 
 		};
 		
