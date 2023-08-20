@@ -89,7 +89,8 @@ public class LoginPage {
 		return new RegisterationPage(driver);
 	}
 	
-
+	
+	
 }
 
  
