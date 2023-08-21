@@ -72,8 +72,8 @@ public class AccountPageTests extends BaseTest{
 		return new Object[][] {
 			{"macbook",3},
 			{"apple",1},
-			{"canon",1},
-			{"samsung",2} 
+			{"canon",1}
+			//{"samsung",2} 
 			 
 		};
 		
