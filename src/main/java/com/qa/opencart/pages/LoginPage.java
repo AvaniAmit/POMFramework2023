@@ -28,7 +28,7 @@ public class LoginPage {
 	private By loginBtn=By.cssSelector("input.btn");
 	private By forgotPWdLink=By.linkText("Forgotten Password");
 	private By RegisterLink=By.cssSelector("div.list-group a[href*='register']");
-	
+	private By home=By.linkText("homepage");//dummy link 
 	//2.public Page Constructor  ---- to get my driver
 	public LoginPage(WebDriver driver)
 	{
