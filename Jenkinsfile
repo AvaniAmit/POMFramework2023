@@ -3,7 +3,7 @@ pipeline
     agent any
     
     tools{
-        maven 'maven'
+        maven 'Maven'
         }
 
     stages 
@@ -39,7 +39,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/AvaniAmit/POMFramework2023.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regression.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/resources/testRunners/testng_regression.xml"
                     
                 }
             }
@@ -83,7 +83,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/AvaniAmit/POMFramework2023.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml"
+                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/resources/testRunners/testng_sanity.xml"
                     
                 }
             }
