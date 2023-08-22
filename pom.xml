@@ -10,7 +10,7 @@
 	<name>NaveenSeleniumPOM</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
-
+ 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>11</java.version>
@@ -124,7 +124,11 @@
 
 
 					<suiteXmlFiles>
-						<suiteXmlFile>src/resources/testRunners/testng_regression.xml</suiteXmlFile>
+					   <!-- 
+						<suiteXmlFile>src/resources/testRunners/testng_regression.xml</suiteXmlFile> 
+						-->
+						
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"

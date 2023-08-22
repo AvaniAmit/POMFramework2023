@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="TestNG Regression Suite" thread-count="3" parallel="tests" verbose="4">
-  <!--this are Tests block-->
-  <test name="Google Test">
-    <classes>
-      <class name="MyTest.GoogleTest"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test name="OpenCart Test">
-    <classes>
-       
-      <class name="MyTest.OpenCartTest"/>
-     
-    </classes>
-  </test> <!-- Test -->
-  
-  <test name="OrangeHRM Test">
-    <classes>
-       
-      <class name="MyTest.OrangeHRMTest"/>
-      
-    </classes>
-  </test> <!-- Test -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpenCart App Test Regression Suite" thread-count="3" parallel="tests" verbose="4">
+
+	<listeners>
+		<listener class-name="com.qa.opencart.listeners.ExtentReportListener" />
+		<listener class-name="com.qa.opencart.listeners.TestAllureListener" />
+		<listener class-name="com.qa.opencart.listeners.AnnotationTransformer" />
+
+	</listeners>
+
+
+	<!--this are Tests block-->
+	<test name="Login Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTests" />
+		</classes>
+	</test> <!-- Test -->
+
+	 
+
+
 </suite> <!-- Suite -->
