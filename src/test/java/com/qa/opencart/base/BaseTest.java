@@ -6,8 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
+ 
 import com.qa.opencart.factory.DriverFactory;
 import com.qa.opencart.pages.AccountPage;
 
@@ -38,12 +40,19 @@ public class BaseTest {
 	protected Properties prop;
 	
 	protected SoftAssert softAssert;
+	
 
+     @Parameters({"browser"})
 	@BeforeTest
-	public void setup() {
+	public void setup(String browserName) {
 		df = new DriverFactory();
 
 		prop = df.initProp();
+		
+		if(browserName!=null)//it means passing browser from testng.xml
+		{
+			prop.setProperty("browser", browserName);
+		}
 		driver = df.initDriver(prop);// it is called call by refrence
 		//this above webdriver is getting Threadloacl WebDriver so this driver will automatically become ThreadLoacl driver  
 		 

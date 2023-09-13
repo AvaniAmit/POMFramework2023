@@ -127,7 +127,6 @@
 					   <!-- 
 						<suiteXmlFile>src/resources/testRunners/testng_regression.xml</suiteXmlFile> 
 						-->
-						
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 					<argLine>
